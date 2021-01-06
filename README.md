@@ -31,6 +31,12 @@
  - Similarity was calculated using dot product
  - Finally our recommender yields 5 most similar fashion items.
  
+ System architecture:<br>
  <img src='images/system_architecture.png' height=300>
  
+ Recommendation flow:<br>
  <img src='images/recommendation.png' height=300>
+
+
+## Deployment
+ The 3 models are deployed in local machine using Streamlit.
