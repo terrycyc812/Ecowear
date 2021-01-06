@@ -27,7 +27,7 @@
 
 ## Working principle
  - 3 models were trained separately to classify **categories(13)**, **colors(10)**, and **attributes(8)** of the input image and scraped images. 
- - Each image will be turned into 31-feature array
+ - Each image will be turned into a 31-feature array
  - Similarity was calculated using dot product
  - Finally our recommender yields 5 most similar fashion items.
  
@@ -66,4 +66,21 @@
 
 
 ## Skills Acquired
-- 
+- Web scraping
+- Computer vision
+- Content-based recommendation system
+- Model deployment
+
+
+### Acknowledgement
+ - DeepFashion dataset
+ > @inproceedings{liuLQWTcvpr16DeepFashion,
+ author = {Liu, Ziwei and Luo, Ping and Qiu, Shi and Wang, Xiaogang and Tang, Xiaoou},
+ title = {DeepFashion: Powering Robust Clothes Recognition and Retrieval with Rich Annotations},
+ booktitle = {Proceedings of IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+ month = {June}, year = {2016}  }
+ - DeepFashion 2 dataset
+ > @article{DeepFashion2,
+  author = {Yuying Ge and Ruimao Zhang and Lingyun Wu and Xiaogang Wang and Xiaoou Tang and Ping Luo},
+  title={A Versatile Benchmark for Detection, Pose Estimation, Segmentation and Re-Identification of Clothing Images},
+  journal={CVPR},   year={2019} }
