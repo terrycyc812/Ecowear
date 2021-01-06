@@ -13,11 +13,13 @@
 
 
 ### How does it work??
- Step 1: Uploading an image with fashion items  
+ **Step 1: Uploading an image with fashion items**  
  <img src='images/step1.png' height=250>
  
- Step 2: View the 5 closest alternative recommendation  
+ **Step 2: View the 5 closest alternative recommendation**
+ 
  <img src='images/step2.png'>
  
- Step 3: Click the link to view product details or make a purchase on the ethical fashion site  
+ **Step 3: Click the link to view product details or make a purchase on the ethical fashion site**
+ 
  <img src='images/step3.png'>
