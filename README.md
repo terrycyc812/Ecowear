@@ -31,6 +31,6 @@
  - Similarity was calculated using dot product
  - Finally our recommender yields 5 most similar fashion items.
  
- <img src='images/system_architecture.png'>
+ <img src='images/system_architecture.png' height=300>
  
- <img src='images/recommendation.png'>
+ <img src='images/recommendation.png' height=300>
