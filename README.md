@@ -1,6 +1,6 @@
 <img src='images/cover.png' height=250>
  
-### Data source
+## Data source
  For the model training, 80K+ different fashion item images from [DeepFashion](http://mmlab.ie.cuhk.edu.hk/projects/DeepFashion.html) & [DeepFashion2](https://github.com/switchablenorms/DeepFashion2).
  
  For the recommendation catalog, 3K+ images are scraped from 5 ethical brands, which are rated as 'good'/'great' in a sustainability rating site '[Good On You](https://goodonyou.eco/)'. The 5 brands are:
@@ -12,7 +12,7 @@
  [<img src='images/howies.jpg' height=25>](https://howies.co.uk/)<br>
 
 
-### How does it work??
+## How does it work??
  **Step 1: Uploading an image with fashion items**  
  <img src='images/step1.png' height=250>
  
@@ -23,3 +23,65 @@
  **Step 3: Click the link to view product details or make a purchase on the ethical fashion site**
  
  <img src='images/step3.png'>
+
+
+## Working principle
+ - 3 models were trained separately to classify **categories(13)**, **colors(10)**, and **attributes(8)** of the input image and scraped images. 
+ - Each image will be turned into a 31-feature array
+ - Similarity was calculated using dot product
+ - Finally our recommender yields 5 most similar fashion items.
+ 
+ System architecture:<br>
+ <img src='images/system_architecture.png' height=300>
+ 
+ Recommendation flow:<br>
+ <img src='images/recommendation.png' height=300>
+
+
+## Classification models
+**1. Category**
+- Using Detectron2 library
+- Architecture of Faster R-CNN
+- Accuracy up to 68%
+
+**2. Color**
+- Using Keras library
+- Architecture referencing to a [research paper from the team of Reza Fuad Rachmadi](https://arxiv.org/pdf/1510.07391.pdf)
+- Accuracy up to 70%
+
+**3. Attribute**
+- Using Keras library
+- Transfering learning from VGG16
+- Accuracy up to 52%
+
+
+## Deployment
+ The 3 models are deployed in local machine using Streamlit.
+
+
+## Challenges
+- Lack of real time recommended product data from the ethical brands
+  - Solution: Use API as data source (if presence), scrape the product frequently
+- Subjectivity in color labelling
+
+
+## Skills Acquired
+- Web scraping
+- Computer vision
+- Content-based recommendation system
+- Model deployment
+
+
+### Acknowledgement
+ - DeepFashion dataset
+ > [@inproceedings{liuLQWTcvpr16DeepFashion,
+ author = {Liu, Ziwei and Luo, Ping and Qiu, Shi and Wang, Xiaogang and Tang, Xiaoou},
+ title = {DeepFashion: Powering Robust Clothes Recognition and Retrieval with Rich Annotations},
+ booktitle = {Proceedings of IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+ month = {June}, year = {2016}  }](http://mmlab.ie.cuhk.edu.hk/projects/DeepFashion.html)
+ - DeepFashion2 dataset
+ > [@article{DeepFashion2,
+  author = {Yuying Ge and Ruimao Zhang and Lingyun Wu and Xiaogang Wang and Xiaoou Tang and Ping Luo},
+  title={A Versatile Benchmark for Detection, Pose Estimation, Segmentation and Re-Identification of Clothing Images},
+  journal={CVPR},   year={2019} }](https://github.com/switchablenorms/DeepFashion2)
+ - [Vehicle Color Recognition using Convolutional Neural Network, Reza Fuad Rachmadi & I Ketut Eddy Purnamay, Department of Multimedia and Networking Engineering, Institut Teknologi Sepuluh Nopember, Surabaya, Indonesia 60111](https://arxiv.org/pdf/1510.07391.pdf)
