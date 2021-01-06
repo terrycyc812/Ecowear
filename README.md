@@ -38,5 +38,32 @@
  <img src='images/recommendation.png' height=300>
 
 
+## Classification models
+**1. Category**
+- Using Detectron2 library
+- Architecture of Faster R-CNN
+- Accuracy up to 68%
+
+**2. Color**
+- Using Keras library
+- Architecture referencing to a [research paper from the team of Reza Fuad Rachmadi](https://arxiv.org/pdf/1510.07391.pdf)
+- Accuracy up to 70%
+
+**3. Attribute**
+- Using Keras library
+- Transfering learning from VGG16
+- Accuracy up to 52%
+
+
 ## Deployment
  The 3 models are deployed in local machine using Streamlit.
+
+
+## Challenges
+- Lack of real time recommended product data from the ethical brands
+  - Solution: Use API as data source (if presence), scrape the product frequently
+- Subjectivity in color labelling
+
+
+## Skills Acquired
+- 
