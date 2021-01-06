@@ -74,13 +74,14 @@
 
 ### Acknowledgement
  - DeepFashion dataset
- > @inproceedings{liuLQWTcvpr16DeepFashion,
+ > [@inproceedings{liuLQWTcvpr16DeepFashion,
  author = {Liu, Ziwei and Luo, Ping and Qiu, Shi and Wang, Xiaogang and Tang, Xiaoou},
  title = {DeepFashion: Powering Robust Clothes Recognition and Retrieval with Rich Annotations},
  booktitle = {Proceedings of IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
- month = {June}, year = {2016}  }
- - DeepFashion 2 dataset
- > @article{DeepFashion2,
+ month = {June}, year = {2016}  }](http://mmlab.ie.cuhk.edu.hk/projects/DeepFashion.html)
+ - DeepFashion2 dataset
+ > [@article{DeepFashion2,
   author = {Yuying Ge and Ruimao Zhang and Lingyun Wu and Xiaogang Wang and Xiaoou Tang and Ping Luo},
   title={A Versatile Benchmark for Detection, Pose Estimation, Segmentation and Re-Identification of Clothing Images},
-  journal={CVPR},   year={2019} }
+  journal={CVPR},   year={2019} }](https://github.com/switchablenorms/DeepFashion2)
+ - [Vehicle Color Recognition using Convolutional Neural Network, Reza Fuad Rachmadi & I Ketut Eddy Purnamay, Department of Multimedia and Networking Engineering, Institut Teknologi Sepuluh Nopember, Surabaya, Indonesia 60111](https://arxiv.org/pdf/1510.07391.pdf)
