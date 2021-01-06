@@ -1,6 +1,6 @@
 <img src='images/cover.png' height=250>
  
-### Data source
+## Data source
  For the model training, 80K+ different fashion item images from [DeepFashion](http://mmlab.ie.cuhk.edu.hk/projects/DeepFashion.html) & [DeepFashion2](https://github.com/switchablenorms/DeepFashion2).
  
  For the recommendation catalog, 3K+ images are scraped from 5 ethical brands, which are rated as 'good'/'great' in a sustainability rating site '[Good On You](https://goodonyou.eco/)'. The 5 brands are:
@@ -12,7 +12,7 @@
  [<img src='images/howies.jpg' height=25>](https://howies.co.uk/)<br>
 
 
-### How does it work??
+## How does it work??
  **Step 1: Uploading an image with fashion items**  
  <img src='images/step1.png' height=250>
  
@@ -23,3 +23,14 @@
  **Step 3: Click the link to view product details or make a purchase on the ethical fashion site**
  
  <img src='images/step3.png'>
+
+
+## Working principle
+ - 3 models were trained separately to classify **categories(13)**, **colors(10)**, and **attributes(8)** of the input image and scraped images. 
+ - Each image will be turned into 31-feature array
+ - Similarity was calculated using dot product
+ - Finally our recommender yields 5 most similar fashion items.
+ 
+ <img src='images/system_architecture.png'>
+ 
+ <img src='images/recommendation.png'>
