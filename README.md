@@ -13,8 +13,8 @@
 
 
 ### How does it work??
- Step 1: Uploading an image with fashion items 
- <img src='images/step1.png'>
+ Step 1: Uploading an image with fashion items  
+ <img src='images/step1.png' height=250>
  
  Step 2: View the 5 closest alternative recommendation  
  <img src='images/step2.png'>
