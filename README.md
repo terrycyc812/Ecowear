@@ -18,7 +18,7 @@
  
  **Step 2: View the 5 closest alternative recommendation**
  
- <img src='images/step2.png'>
+ <img src='images/step2.png' height=450>
  
  **Step 3: Click the link to view product details or make a purchase on the ethical fashion site**
  
