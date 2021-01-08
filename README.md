@@ -42,12 +42,12 @@
 **1. Category**
 - Using Detectron2 library
 - Architecture of Faster R-CNN
-- Accuracy up to 68%
+- Precision up to 68%
 
 **2. Color**
 - Using Keras library
 - Architecture referencing to a [research paper from the team of Reza Fuad Rachmadi](https://arxiv.org/pdf/1510.07391.pdf)
-- Accuracy up to 70%
+- Precision up to 78%
 
 **3. Attribute**
 - Using Keras library
